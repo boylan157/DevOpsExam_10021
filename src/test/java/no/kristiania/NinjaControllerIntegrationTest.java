@@ -65,7 +65,7 @@ public class NinjaControllerIntegrationTest {
         ninja.setKatana("New Katana");
         testRestTemplate.put(getUrl() + "/ninjas/" + id, ninja);
         Ninja updatedNinja = testRestTemplate.getForObject(getUrl() + "/ninjas/" + id, Ninja.class);
-        assertEquals("New Katana", updatedNinja.getKatana());
+        assertEquals("New Katanas", updatedNinja.getKatana());
     }
 
     @Test
