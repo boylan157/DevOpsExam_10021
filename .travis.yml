@@ -1,10 +1,10 @@
 language: java
+services:
+  - docker
 install:
 - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 script:
 - bash docker_push
-services:
-- docker
 env:
   global:
   - secure: zHF1QCPpyFHOvMxoCgp9ewFH4RCoO9jcgg7Pl9y4nonhTvjtOPE/Tnrdd+WWwxtWocHMevzSho+O19mjgwr5TuC3+ECHZlwCYCirYBYAbLcuxVixamnz1EXsOsDAch9R83ypQiy2XuGjUrdU+kRWq6oNiMPrv/hOOhkB4EbEbWrxv40AulqWzHpS+qfclRi/Zg59kEml9zX4sSy8yHjGvv+YHfeJjRLb96IWx18RUF8UatCUm9uacKZoYG6yIHkjdHlMAylBBEITWQbGz+bZjp+CQ79kj3Fuzl0rt4YxNGYBi9JJ28K1IcJWN/K83YjNZtBGWVXpyBm/6TmNT4SwXHlOCpHZNIetP0vKeLmg2XQcFmaGYEYs0yMIYMit92vyLz6ODsv5LTqVFcFD8nzgzEyLTGtwYMSG+AwA7HXQ6Nrq3tCy7em5nMAf2hkhWXH1f4soNh+gtaqe++Y+Th9Ir3hvH+Mg+d9zJDdzBs2m/nnamDWhfVv6hlGuGLV2VgTaksTCrpT4W9Hznv3d/66f0Go2Uu40b0BLWfy2mHZ6LkPqbzt/fIpAJv2osWR0HLHRprhJ9dm7tUY2u0cbKvSp2kQZKD0tdrCE87Am4qKcWxXOJH788MV+pJNdawk+mWuFStWIZ+TMg6fuCDKrIR5KzBNpEPaUh1uluu1I3AZMjS8=
