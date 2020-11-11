@@ -17,6 +17,7 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
+    // Make som data
     @Bean
     @Autowired
     CommandLineRunner runner(NinjaRepository ninjaRepository){
