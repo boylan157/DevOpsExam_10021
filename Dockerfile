@@ -4,6 +4,6 @@ COPY pom.xml .
 COPY src ./src
 RUN mvn package -DskipTests
 
-FROM adoptopenjdk/openjdk11:alpine-slim
+FROM openjdk:8-jdk-alpine
 COPY --from=builder /app/target/*.jar /app/application.jar
-ENTRYPOINT ["java","-jar","app/application.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","app/application.jar"]
