@@ -4,7 +4,7 @@ target/
 !maven/wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-
+!docker_push
 ### STS ###
 .apt_generated
 .classpath
