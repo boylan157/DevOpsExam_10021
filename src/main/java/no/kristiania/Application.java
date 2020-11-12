@@ -38,9 +38,14 @@ public class Application {
                     ninja3.setName("Klein");
                     ninja3.setKatana("Excalibur");
 
+                    Ninja ninja4 = new Ninja();
+                    ninja4.setName("testNinja");
+                    ninja4.setKatana("TestKatana");
+
                     ninjaRepository.save(ninja);
                     ninjaRepository.save(ninja2);
                     ninjaRepository.save(ninja3);
+                    ninjaRepository.save(ninja4);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
