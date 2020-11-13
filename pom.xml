@@ -11,6 +11,7 @@
 	<groupId>no.kristiania</groupId>
 	<artifactId>DevOpsExam_10021</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>DevOpsExam_10021</name>
 	<description>Exam project in DevOps Course</description>
 
