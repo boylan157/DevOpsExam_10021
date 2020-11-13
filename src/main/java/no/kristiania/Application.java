@@ -45,6 +45,7 @@ public class Application {
                     ninjaRepository.save(ninja);
                     ninjaRepository.save(ninja2);
                     ninjaRepository.save(ninja3);
+                    ninjaRepository.save(ninja4);
 
                 } catch (Exception e) {
                     e.printStackTrace();
