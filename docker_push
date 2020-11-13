@@ -2,4 +2,4 @@
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 docker build . --tag devopsexam --build-arg JAR_FILE=./target/DevOpsExam_10021-0.0.1-SNAPSHOT.jar
 docker devopsexam  boylan157/devopsexam
-docker boylan157/devopsexam
+docker push boylan157/devopsexam
