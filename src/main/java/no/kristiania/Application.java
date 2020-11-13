@@ -23,7 +23,7 @@ public class Application {
     CommandLineRunner runner(NinjaRepository ninjaRepository){
         return (args) -> {
             long count = ninjaRepository.count();
-
+//
             if(count == 0){
                 try {
                     Ninja ninja = new Ninja();
